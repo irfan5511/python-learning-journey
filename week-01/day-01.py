@@ -49,7 +49,7 @@ def find_largest(numbers: list[int]) -> int:
     Example: find_largest([3, 7, 2, 9, 5]) should return 9.
     Decide yourself what should happen if the list is empty.
     """
-    max_num = 0
+    max_num = numbers [0]
     for num in numbers:
         if num > max_num:
             max_num = num
@@ -74,6 +74,7 @@ def fibonacci(n: int) -> list[int]:
     while len(fib) < n:
         fib.append(fib[-1] + fib[-2])
     return fib
+
 
     
 
